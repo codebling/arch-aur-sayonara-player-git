@@ -12,7 +12,7 @@ license=('GPL3')
 depends=('qt5-base' 'taglib' 'gst-plugins-base' 'gst-plugins-good' 'gst-plugins-bad' 'libmtp')
 optdepends=('lame' 'gst-plugins-ugly')
 makedepends=('cmake' 'qt5-tools')
-conflicts=('sayonara-player-svn' 'sayonara-player' 'sayonara-bin')
+conflicts=("${_pkgname}" "${_pkgname}-beta")
 source=("git+https://gitlab.com/luciocarreras/sayonara-player.git")
 sha512sums=('SKIP')
 
