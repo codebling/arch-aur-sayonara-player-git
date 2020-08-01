@@ -9,8 +9,10 @@ pkgdesc="A small, clear and fast audio player for Linux written in C++, supporte
 arch=('i686' 'x86_64')
 url="http://sayonara-player.com"
 license=('GPL3')
-depends=('qt5-base' 'taglib' 'gst-plugins-base' 'gst-plugins-good' 'gst-plugins-bad' 'libmtp')
-optdepends=('lame' 'gst-plugins-ugly')
+depends=('qt5-base' 'taglib' 'gst-plugins-base' 'gst-plugins-good')
+optdepends=('gst-libav: additional codecs'
+            'gst-plugins-bad: additional codecs'
+            'gst-plugins-ugly: additional codecs')
 makedepends=('cmake' 'qt5-tools')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}" "${_pkgname}-beta")
