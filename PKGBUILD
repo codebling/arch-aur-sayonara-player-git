@@ -1,8 +1,8 @@
 # Contributor: Fixed Torres <aur_linuxero@outlook.com>
 # Maintainer: Fixed Torres <aur_linuxero@outlook.com>
 
-pkgname=sayonara-player-git
 _pkgname=sayonara-player
+pkgname=${_pkgname}-git
 pkgver=1.5.1_stable5
 pkgrel=1
 pkgdesc="Is a small, clear and fast audio player for Linux written in C++, supported by the Qt framework. It uses Gstreamer as audio backend."
