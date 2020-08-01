@@ -13,7 +13,7 @@ depends=('qt5-base' 'taglib' 'gst-plugins-base' 'gst-plugins-good' 'gst-plugins-
 optdepends=('lame' 'gst-plugins-ugly')
 makedepends=('cmake' 'qt5-tools')
 conflicts=('sayonara-player-svn' 'sayonara-player' 'sayonara-bin')
-source=("${pkgname}::git+https://git.sayonara-player.com/sayonara.git")
+source=("git+https://gitlab.com/luciocarreras/sayonara-player.git")
 sha512sums=('SKIP')
 
 pkgver() {
