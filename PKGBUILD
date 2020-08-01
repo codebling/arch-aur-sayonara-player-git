@@ -14,7 +14,7 @@ optdepends=('lame' 'gst-plugins-ugly')
 makedepends=('cmake' 'qt5-tools')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}" "${_pkgname}-beta")
-source=("git+https://gitlab.com/luciocarreras/"${_pkgname}".git")
+source=("git+https://gitlab.com/luciocarreras/${_pkgname}.git")
 sha512sums=('SKIP')
 
 pkgver() {
