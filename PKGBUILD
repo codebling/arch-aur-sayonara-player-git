@@ -16,6 +16,11 @@ conflicts=('sayonara-player-svn' 'sayonara-player' 'sayonara-bin')
 source=("${pkgname}::git+https://git.sayonara-player.com/sayonara.git")
 sha512sums=('SKIP')
 
+pkgver() {
+    cd "$_pkgname"
+    printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
 build() {
     cd "$srcdir/$pkgname"
     mkdir build && cd build
