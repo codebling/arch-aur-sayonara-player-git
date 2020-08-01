@@ -13,6 +13,7 @@ optdepends=('lame' 'gst-plugins-ugly')
 makedepends=('cmake' 'qt5-tools')
 conflicts=('sayonara-player-svn' 'sayonara-player' 'sayonara-bin')
 source=("${pkgname}::git+https://git.sayonara-player.com/sayonara.git")
+sha512sums=('SKIP')
 
 build() {
     cd "$srcdir/$pkgname"
@@ -25,5 +26,4 @@ package() {
     cd "$srcdir/$pkgname/build"
     make DESTDIR="$pkgdir/" install
 }
-sha512sums=('SKIP')
 
