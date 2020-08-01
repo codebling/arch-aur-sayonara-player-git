@@ -28,7 +28,7 @@ build() {
     cd "$srcdir/$_pkgname"
     mkdir build && cd build
     cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE="Release"
-    make
+    make -j10
 }
 
 package() {
