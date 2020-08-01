@@ -23,14 +23,14 @@ pkgver() {
 }
 
 build() {
-    cd "$srcdir/$pkgname"
+    cd "$srcdir/$_pkgname"
     mkdir build && cd build
     cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE="Release"
     make
 }
 
 package() {
-    cd "$srcdir/$pkgname/build"
+    cd "$srcdir/$_pkgname/build"
     make DESTDIR="$pkgdir/" install
 }
 
