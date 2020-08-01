@@ -13,7 +13,7 @@ depends=('qt5-base' 'taglib' 'gst-plugins-base' 'gst-plugins-good')
 optdepends=('gst-libav: additional codecs'
             'gst-plugins-bad: additional codecs'
             'gst-plugins-ugly: additional codecs')
-makedepends=('cmake' 'qt5-tools')
+makedepends=('cmake' 'qt5-tools' 'qt5-svg')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}" "${_pkgname}-beta")
 source=("git+https://gitlab.com/luciocarreras/${_pkgname}.git")
