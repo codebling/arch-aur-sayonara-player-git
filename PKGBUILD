@@ -13,14 +13,14 @@ optdepends=('lame' 'gst-plugins-ugly')
 makedepends=('cmake' 'qt5-tools')
 conflicts=('sayonara-player-svn' 'sayonara-player' 'sayonara-bin')
 source=("${pkgname}::git+https://git.sayonara-player.com/sayonara.git")
- 
+
 build() {
     cd "$srcdir/$pkgname"
     mkdir build && cd build
     cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE="Release"
     make
 }
- 
+
 package() {
     cd "$srcdir/$pkgname/build"
     make DESTDIR="$pkgdir/" install
